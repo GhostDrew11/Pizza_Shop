@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="886.0" styleClass="bodybg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.DrinkListController">
+   <children>
+      <Label alignment="CENTER" prefHeight="43.0" prefWidth="163.0" text="DRINK LIST" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="27.0" layoutY="110.0" prefHeight="108.0" prefWidth="80.0">
+         <children>
+            <ImageView fx:id="Pview" fitHeight="108.0" fitWidth="111.0" onMouseClicked="#OrderP" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Pepsi.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="Plbl" layoutX="27.0" layoutY="74.0" prefHeight="27.0" prefWidth="36.0" text="Pepsi" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="DPlbl" layoutX="170.0" layoutY="73.0" prefHeight="27.0" prefWidth="73.0" text="Diet Pepsi" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="170.0" layoutY="110.0" prefHeight="108.0" prefWidth="137.0">
+         <children>
+            <ImageView fx:id="DPview" fitHeight="108.0" fitWidth="137.0" onMouseClicked="#OrderDP" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Diet%20Pepsi.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="Olbl" layoutX="170.0" layoutY="254.0" prefHeight="27.0" prefWidth="54.0" text="Orange" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="171.0" layoutY="303.0" prefHeight="108.0" prefWidth="108.0">
+         <children>
+            <ImageView fx:id="Oview" fitHeight="108.0" fitWidth="137.0" onMouseClicked="#OrderO" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Orange.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="DOlbl" layoutX="359.0" layoutY="72.0" prefHeight="27.0" prefWidth="88.0" text="Diet Orange" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="361.0" layoutY="109.0" prefHeight="108.0" prefWidth="108.0">
+         <children>
+            <ImageView fx:id="DOview" fitHeight="108.0" fitWidth="137.0" onMouseClicked="#OrderDO" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Diet%20Orange.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="304.0" prefHeight="108.0" prefWidth="108.0">
+         <children>
+            <ImageView fx:id="Lview" fitHeight="108.0" fitWidth="137.0" onMouseClicked="#OrderL" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Lemonade.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="Llbl" layoutX="27.0" layoutY="253.0" prefHeight="27.0" prefWidth="73.0" text="Lemonade" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="dmagicpane" layoutX="498.0" layoutY="108.0" prefHeight="293.0" prefWidth="348.0" />
+      <JFXTextArea layoutX="27.0" layoutY="439.0" prefHeight="36.0" prefWidth="216.0" promptText="Each drink cost $1 regardless of the size" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

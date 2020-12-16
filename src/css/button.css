@@ -1,0 +1,13 @@
+.button{
+    -fx-background-color: mediumaquamarine; 
+    -fx-background-radius: 5;
+    color: black;
+    text-align: center;
+}
+
+.button:hover{
+    -fx-background-color: mediumaquamarine;
+    -fx-background-insets: 0 0 1 0;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="886.0" styleClass="bodybg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.PizzaListController">
+   <children>
+      <Label alignment="CENTER" prefHeight="43.0" prefWidth="163.0" text="PIZZA LIST" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="111.0" prefHeight="92.0" prefWidth="120.0">
+         <children>
+            <ImageView fx:id="CTview" fitHeight="91.0" fitWidth="137.0" layoutY="1.0" onMouseClicked="#OrderCT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Chicken.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="CTlbl" layoutX="14.0" layoutY="74.0" prefHeight="27.0" prefWidth="88.0" text="Chicken Taco" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Mlbl" layoutX="14.0" layoutY="233.0" prefHeight="27.0" prefWidth="73.0" text="MeatZZa" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="156.0" layoutY="112.0" prefHeight="91.0" prefWidth="122.0">
+         <children>
+            <ImageView fx:id="Dview" fitHeight="98.0" fitWidth="122.0" layoutY="5.0" onMouseClicked="#OrderDX" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Deluxe.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="Dlbl" layoutX="163.0" layoutY="74.0" prefHeight="27.0" prefWidth="54.0" text="Deluxe" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="MPSlbl" layoutX="163.0" layoutY="233.0" prefHeight="27.0" prefWidth="137.0" text="Mom &amp; Pop Special" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="156.0" layoutY="267.0" prefHeight="81.0" prefWidth="122.0">
+         <children>
+            <ImageView fx:id="MPSview" fitHeight="81.0" fitWidth="122.0" layoutX="1.0" onMouseClicked="#OrderMP" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Special.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="Mview" fitHeight="91.0" fitWidth="121.0" layoutX="14.0" layoutY="267.0" onMouseClicked="#OrderMZ" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/Meatzza.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="magicpane" layoutX="313.0" layoutY="60.0" prefHeight="334.0" prefWidth="522.0">
+         <children>
+            <AnchorPane fx:id="supersub" layoutX="161.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <JFXTextArea layoutX="14.0" layoutY="405.0" prefHeight="92.0" prefWidth="245.0" promptText="The price of each pizza regarding the size is small $4, medium $6,large $8, X-large $10. First topping is free starting at the second is $0.50, third $0.75, fourth $1.00, fifth $1.25. You can only select up to five toppings." style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

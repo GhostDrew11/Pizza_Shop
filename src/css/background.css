@@ -1,0 +1,5 @@
+.bodybg{
+    -fx-background-image:url("../icons/background.jpg");
+}
+
+//Mainly used to format the appearence of items in the GUI
